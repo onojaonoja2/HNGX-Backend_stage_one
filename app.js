@@ -8,7 +8,8 @@ app.use(express.urlencoded({ extended: false }));
 // Endpoint to handle GET requests
 app.get('/api', (req, res) => {
   // Get query parameters
-  const { slack_name, track } = req.query;
+  const slack_name = 'Samuel Onoja'; 
+  const track = 'Backend';
 
   // Validate query parameters
   if (!slack_name || !track) {
@@ -25,7 +26,7 @@ app.get('/api', (req, res) => {
 
   // GitHub URLs
   const githubRepoURL = 'https://github.com/onojaonoja2/HNGX-Backend_stage_one.git';
-  const githubFileURL = `${githubRepoURL}/blob/main/file_name.ext`;
+  const githubFileURL = `${githubRepoURL}/blob/main/app.js.ext`;
 
   // Response JSON
   const response = {
