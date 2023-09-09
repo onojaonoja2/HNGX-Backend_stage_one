@@ -22,7 +22,7 @@ app.get('/api', (req, res) => {
 
   // Get current UTC time
   const now = new Date();
-  const utcTime = new Date(now.getTime() + now.getTimezoneOffset() * 60000).toISOString();
+  const utcTime = new Date(now.getTime() + now.getTimezoneOffset() * 60000).toISOString().split('.'[0] + 'Z';
 
   // GitHub URLs
   const githubRepoURL = 'https://github.com/onojaonoja2/HNGX-Backend_stage_one.git';
