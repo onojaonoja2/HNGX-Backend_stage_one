@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; // You can change this to your desired port
+const port = 3000; 
 
 // Middleware to parse query parameters
 app.use(express.urlencoded({ extended: false }));
@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/api', (req, res) => {
   // Get query parameters
   const slack_name = 'Samuel Onoja'; 
-  const track = 'Backend';
+  const track = 'backend';
 
   // Validate query parameters
   if (!slack_name || !track) {
